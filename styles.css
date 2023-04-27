@@ -1,0 +1,103 @@
+/* Importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:ital,wght@1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+/* Setting display type of a body and container */
+body, .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(7, 2, 24);
+}
+/* Setting properties of alarm display */
+.container{
+    width: 440px;
+    background-color: #fff;
+    border-radius: 15px;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+/* Setting properties of image */
+.container img{
+    max-width: 100px;
+}
+/* Setting properties of  current time text*/
+.container h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 25px 0px 12px;
+}
+/* Setting properties of  select option*/
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+}
+
+.content .column{
+    border: 1px solid rgb(4, 25, 31);
+    border-radius: 8px;
+    padding: 0 10px;
+    width: 30%;
+}
+
+.column select{
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+}
+/* Setting properties of  button*/
+.container button{
+    outline: none;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: 600;
+    background-color: rgb(17, 103, 114);
+    border-radius: 10PX;
+}
+.container button:hover{
+    cursor: pointer;;
+}
+
+/* Setting properties of alarm list */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* Setting prorperties of list of alarms */
+ul li{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    align-items: center;
+}
+/* Setting prorperties of delete icon */
+.delete{
+    height: 28px;
+    padding: 5px 0px;
+    border-radius: 3px;
+}
+.delete:hover{
+    background: #a01313;
+    cursor: pointer;
+}
